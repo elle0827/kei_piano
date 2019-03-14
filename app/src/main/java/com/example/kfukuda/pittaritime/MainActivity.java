@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
             R.raw.so,
             R.raw.ra,
             R.raw.si
-
     };
 
     @Override
@@ -27,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    protected void onResune() {
+    @Override
+    protected void onResume() {
         super.onResume();
 
         mSoundPool = new SoundPool(mSoundResource.length, AudioManager.STREAM_MUSIC, 0);
@@ -50,24 +50,30 @@ public class MainActivity extends AppCompatActivity {
         mSoundPool.play(mSoundID[0], 1.0F, 1.0F, 0, 0, 1.0F);
     }
 
-    public void re(View v) { mSoundPool.play(mSoundID[1], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void re(View v) {
+        mSoundPool.play(mSoundID[1], 1.0F, 1.0F, 0, 0, 1.0F);
     }
 
-    public void mi(View v) { mSoundPool.play(mSoundID[2], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void mi(View v) {
+        mSoundPool.play(mSoundID[2], 1.0F, 1.0F, 0, 0, 1.0F);
     }
 
-    public void fa(View v) {mSoundPool.play(mSoundID[3], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void fa(View v) {
+        mSoundPool.play(mSoundID[3], 1.0F, 1.0F, 0, 0, 1.0F);
     }
 
-    public void so(View v) {mSoundPool.play(mSoundID[4], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void so(View v) {
+        mSoundPool.play(mSoundID[4], 1.0F, 1.0F, 0, 0, 1.0F);
     }
 
-    public void ra(View v) {mSoundPool.play(mSoundID[5], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void ra(View v) {
+        mSoundPool.play(mSoundID[5], 1.0F, 1.0F, 0, 0, 1.0F);
 
 
     }
 
-    public void si(View v) {mSoundPool.play(mSoundID[6], 1.0F, 1.0F, 0, 0, 1.0F);
+    public void si(View v) {
+        mSoundPool.play(mSoundID[6], 1.0F, 1.0F, 0, 0, 1.0F);
 
 
     }
